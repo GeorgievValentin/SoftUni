@@ -1,0 +1,32 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+}
+
+section ul {
+    list-style: square;
+}
+
+img {
+    width: 75%;
+}
+
+article {
+    width: 60%;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+aside {
+    display: inline-block;
+    vertical-align: top;
+}
+
+aside ul {
+    list-style: square;
+    width: 60%;
+}
