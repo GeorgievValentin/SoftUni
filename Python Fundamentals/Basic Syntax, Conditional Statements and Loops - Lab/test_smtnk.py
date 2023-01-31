@@ -1,8 +1,4 @@
-thisdict = {
-  "brand": "Ford",
-  "electric": False,
-  "year": 1964,
-  "colors": ["red", "white", "blue"]
-}
+SELECT COUNT(state) FROM Customer table
+ORDER BY state DESC
 
-print(f'{" or ".join(thisdict["colors"])}')
+SELECT COUNT()
