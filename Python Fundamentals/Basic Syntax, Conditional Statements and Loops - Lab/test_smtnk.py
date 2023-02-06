@@ -1,4 +1,0 @@
-SELECT COUNT(state) FROM Customer table
-ORDER BY state DESC
-
-SELECT COUNT()
