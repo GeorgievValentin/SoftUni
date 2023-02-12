@@ -13,7 +13,7 @@ body {
 .container {
   display: flex;
   width: 50%;
-  gap: 28px;
+  gap: 10px;
   position: relative;
 }
 
@@ -21,7 +21,7 @@ body {
   overflow: hidden;
   position: relative;
   background-color: black;
-  border-radius: 20px;
+  border-radius: 8px;
   box-shadow: 0px 0px 46px -1px rgba(0, 0, 0, 0.75);
   object-fit: cover;
   width: 15%;
@@ -29,5 +29,5 @@ body {
 
 .container :nth-child(2) {
   width: 70%;
-  padding: 0px 48px;
+  padding: 0px 16px;
 }
