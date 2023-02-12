@@ -1,0 +1,23 @@
+body {
+    margin: 80px;
+    font-family: Georgia, serif;
+
+}
+
+header {
+    border-bottom: 2px rgb(0,0,0) solid;
+    display: flex;
+    justify-content: space-between;
+    font-family: Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 42px;
+}
+
+a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
