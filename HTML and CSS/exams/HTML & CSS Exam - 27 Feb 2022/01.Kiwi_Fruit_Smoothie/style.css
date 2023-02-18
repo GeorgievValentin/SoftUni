@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Merriweather:wght@700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+html{
+    font-family: 'PT Serif', serif;
+}
+
+.container {
+  display: flex;
+  width: 70%;
+  border: solid 0px black;
+  padding: 28px 24px;
+  margin: 38px auto;
+  box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  background-image: url(image/image1.png);
+  background-repeat: no-repeat;
+  background-position: initial;
+  background-size: contain;
+
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-right: 24px;
+}
+
+.section h1 {
+    border-bottom: dotted 2px #008217;
+    padding-bottom: 12px;
+    margin: 0px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.subtitle h3 {
+    font-weight: 400;
+  font-size: 18px;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 32px 0px 0px 0px;
+}
+
+.recipe p {
+    margin: 4px 0px;
+    font-size: 18px;
+    
+}
+
+.recipe p span {
+    color: #008217;
+    font-weight: bold;
+}
+
+.section > p {
+    text-align: left;
+    margin-top: 0px;
+    font-size: 18px;
+    margin: 42px 0px;
+}
+
+.table {
+    margin: 0px;
+    border: solid 1px #008217;
+    padding: 0px;
+}
+
+.table td {
+    border: solid 1px #008217;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.table span {
+    font-weight: bold;
+}
+
+.img {
+    width: 50%;
+}
