@@ -1,0 +1,264 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+
+html * {
+  font-family: Helvetica, sans-serif;
+  color: #474953;
+}
+
+.container {
+  max-width: 1920px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 16px 0px;
+}
+
+.header h3 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.header span {
+  color: #34b1c4;
+}
+
+.header nav ul {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 44px;
+}
+
+.main-sec {
+  position: relative;
+}
+
+.main-sec div {
+  position: absolute;
+  bottom: 170px;
+  left: 260px;
+  width: 570px;
+  height: 220px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 12px;
+}
+
+.main-sec div p {
+  color: #fff;
+  font-size: 50px;
+}
+
+.main-sec div button {
+  font-size: 32px;
+  color: #fff;
+  background-color: #008cba;
+  border-radius: 40px;
+  border: none;
+  padding: 12px 40px;
+  align-self: flex-start;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome h1 {
+  color: #464f57;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.welcome hr {
+  width: 130px;
+  height: 3px;
+  background-color: #34b1c4;
+}
+
+.welcome p {
+  width: 70%;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 12px;
+}
+
+.welcome button {
+  color: #fff;
+  background-color: #454545;
+  font-size: 20px;
+  padding: 14px 38px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 44px;
+}
+
+.services {
+  background-color: #eef0f1;
+  padding: 40px;
+}
+
+.services h2 {
+  color: #454545;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.services hr {
+  width: 130px;
+  height: 3px;
+  background-color: #454545;
+}
+
+.services .cards {
+  display: flex;
+  width: 80%;
+  gap: 10px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  padding: 28px 0px;
+}
+
+.cards .card {
+  width: 30%;
+  height: 580px;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.cards .card img {
+  width: 100%;
+}
+
+.cards .card h3 {
+  color: #454545;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 32px;
+}
+
+.cards .card p {
+  color: #454545;
+  font-size: 20px;
+  padding: 22px;
+}
+
+.cards .card button {
+  color: #fff;
+  background-color: #454545;
+  font-size: 20px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+}
+
+.subscr {
+  background-color: #393f43;
+  padding: 54px;
+}
+
+.subscr * {
+  color: #fff;
+}
+
+.subscr h3 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.subscr hr {
+  width: 130px;
+  height: 3px;
+  background-color: #fff;
+}
+
+.subscr p {
+  font-size: 20px;
+  padding: 16px;
+}
+
+.subscr .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscr .form form input {
+  font-size: 24px;
+  padding: 12px 20px;
+  width: 600px;
+  border: none;
+  border-radius: 10px;
+  font-style: italic;
+  background-color: #545a5e;
+}
+
+.subscr .form button {
+  background-color: #6bbfff;
+  font-size: 24px;
+  padding: 12px 38px;
+  border: none;
+  border-radius: 10px;
+  margin: 12px;
+}
+
+.map {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2f3539;
+    
+
+}
+
+.map h4 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.map li {
+    text-align: left;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.map a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.map :nth-child(4) div {
+    display: flex;
+    
+}
+
+.map :nth-child(4) div i {
+    color: #fff;
+    font-size: 24px;
+    margin: 12px;
+}
+
+footer {
+    background-color: #262b2f;
+    color: #fff;
+    font-size: 18px;
+    padding: 18px;
+}
+
+footer a {
+    color: #1872ab;
+    text-decoration: none;
+}
