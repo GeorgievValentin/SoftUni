@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Merriweather:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1920px;
+  text-align: center;
+}
+
+
+.land {
+    position: relative;
+}
+
+.land img {
+    width: 100%;
+    height: 680px;
+    object-fit: cover;
+
+}
+
+.land h3 {
+    font-size: 26px;
+}
+
+.land .navigation {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    align-items: center;
+    bottom: 590px;
+    width: 100%;
+}
+
+.land nav ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.navigation a {
+    color: black;
+
+}
+
+.navigation button {
+    color: white;
+    background-color: #370511;
+    padding: 6px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.land-section {
+    position: absolute;
+    bottom: 200px;
+    left: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent;
+}
+
+.land-section h1 {
+    font-size: 46px;
+    padding-bottom: 8px;
+}
+
+.land-section span {
+    font-size: 24px;
+    padding-bottom: 36px;
+}
+
+.land-section button {
+    color: white;
+    background-color: #370511;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 28px;
+    margin-top: 32px;
+}
+
+.main h2 {
+    margin-top: 42px;
+    font-size: 32px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    gap: 50px;
+    margin-top: 28px;
+}
+
+
+
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 30%;
+    border-radius: 12px;
+    overflow: hidden;
+} 
+
+.cards .card img {
+    width: 100%;
+    object-fit: cover;
+    height: 325px;
+}
+
+.card h3 {
+    margin: 14px ;
+}
+
+.card p {
+    width: 80%;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.card button {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 2px solid  #d6cbce;
+    border-radius: 30px;
+    padding: 14px 42px;
+}
+
+.map {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 32px;
+    margin-top: 120px;
+}
+
+.map a {
+    color: white;
+    
+}
+
+.map li {
+    margin-bottom: 18px;
+}
+
+.map div {
+    display: flex;
+    font-size: 22px;
+    gap: 22px;
+}
+
+.map h2 {
+    font-size: 32px;
+}
