@@ -18,5 +18,3 @@ function solve(arr) {
 
     console.log(result)
 }
-
-solve([2,4,6,8,10])
