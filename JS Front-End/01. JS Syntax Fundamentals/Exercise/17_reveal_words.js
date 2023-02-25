@@ -11,6 +11,3 @@ function words(words, text) {
     })
     console.log(text)
 }
-
-words('great, learning',
-'softuni is ***** place for ******** new programming languages')
