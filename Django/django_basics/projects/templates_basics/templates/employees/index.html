@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Employee</title>
+{#    <link rel="stylesheet" href="/static/css/site.css">#} 
+    <link rel="stylesheet" href="{% static 'css/site.css' %}">
+</head>
+<body>
+
+
+{#<img height="300px" src="/static/images/cat.jpg" alt="Two faced cat">#}
+<img height="300px" src="{% static 'images/cat.jpg' %}" alt="Two faced cat">
+
+<p>Current url: {% url "index" %}</p>
+<p>Params: {{ get_params }}</p>
+
+<h1>{{ title }}</h1><br>
+
+<ul>
+    {% for age in ages %}
+    <li>
+        <a href="{% url "index" %}?age={{ age }}">{{ age }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<a href="{% url "employee_details" pk=17 %}">Go to employee</a>
+
+<h1>Data from `dict`</h1>
+<h2>First name: {{ person_dict.first_name }}</h2>
+<h2>Last name: {{ person_dict.last_name }}</h2>
+<h2>Dict items: {{ person_dict.items }}</h2><br>
+
+<h1>Data from `class`</h1>
+<h2>First name: {{ person_obj.first_name }}</h2>
+<h2>Last name: {{ person_obj.last_name }}</h2>
+<h2>Full name: {{ person_obj.full_name }}</h2>
+
+<br>
+<hr>
+<br>
+
+<h1>Filters</h1>
+
+<p>
+    {{ person_obj.full_name }}
+</p>
+
+<p>
+    {{ person_obj.full_name|truncatechars:4 }}
+</p>
+
+<p>
+    Person age: {{ person_obj.age }} <br>
+    Default value by `class Person` is `None`
+</p>
+
+<p>
+    Person age: {{ person_obj.age|default:"Unknown" }} <br>
+    Default value by `filter` is `Unknown`, because of value `None` (falsy)
+</p>
+
+<p>
+    Employees on shift: {{ names|join:"; " }}
+</p>
+
+<p>
+    Raw date by system: {{ date }}
+</p>
+
+<p>
+    Date formatted by filer: {{ date|date:"D d M Y" }}
+</p>
+
+<p>
+    Length of `names` list: <strong>{{ names|length }}</strong>
+</p>
+
+<p>
+    Length of `person_dict`: <strong>{{ person_dict|length }}</strong>
+</p>
+
+<p>
+    Length of `person_obj`: <strong>{{ person_obj|length }}</strong>
+</p>
+
+<br>
+<hr>
+<br>
+
+<h1>Tags</h1>
+
+<h3>if - elif - else statements</h3>
+
+{% if ages %}
+<p>
+    Ages: {{ ages|join:", " }}
+</p>
+{% else %}
+<p>
+    No ages.
+</p>
+{% endif %}
+
+{% if empty_ages %}
+<p>
+    Empty ages: {{ empty_ages|join:", " }}
+</p>
+{% else %}
+<p>
+    No ages.
+</p>
+{% endif %}
+<br>
+
+<h3>for, for empty loops</h3>
+
+
+<ul>
+    {% for age in ages %}
+    {% if age <= 30 %}
+    <li class="young">
+        <strong>{{ age }}</strong>
+    </li>
+    {% elif age <= 70 %}
+    <li class="adult">
+        <strong>{{ age }}</strong>
+    </li>
+    {% else %}
+    <li class="old">
+        <strong>{{ age }}</strong>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+<ul>
+    {% for age in empty_ages %}
+    <li>
+        <strong>{{ age }}</strong>
+    </li>
+    {% empty %}
+    No ages:
+    {% endfor %}
+</ul>
+
+<br>
+<hr>
+<br>
+
+<h1>CSRF Token</h1>
+
+<p>
+    CSRF token as variable: {{ csrf_token }}
+</p>
+
+<p>
+     CSRF token as tag: {% csrf_token %}    <- It is hidden 
+</p>
+
+</body>
+</html>
