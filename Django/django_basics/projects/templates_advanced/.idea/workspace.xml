@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ce74b3b3-5a7e-4ae1-ac1e-6e1e46f64745" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/templates_advanced/web/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../templates_basics/staticfiles/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_basics/staticfiles/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../templates_basics/templates_basics/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_basics/templates_basics/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/01. JS-Front-End-JS-Syntax-Fundamentals-Exercises.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/01_ages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/02_vacation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/03_leap_year.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/04_print_and_sum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/05_multiplication_table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/06_sum_digits.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/07_chars_to_string.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/08_reversed_chars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/09_fuit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/10_same_numbers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/11_road_radar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/12_cooking_by_numbers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/13_array_rotation_1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/14_print_every_n-th _lement_from_an_array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/15_list_of_names.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/16_sorting_numbers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/17_reveal_words.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/18_modern_times_of_#.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/19_string_substring.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Exercise/20_pascal_case_splitter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/01. JS-Front-End-JS-Syntax-Fundamentals-Lab.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/01_multiply_the_number_by_2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/02_student_information.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/03._excellent_grade.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/04_month_printer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/05_math_operations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/06_largest_number.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/07_theatre_promotions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/08_circle_area.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/09_numbers_from_1_to_5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/10_numbers_from _m_to_n.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/11_sum_first_and_last_array_elements.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/12_reverse_an_array_of_numbers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/13_even_and_odd_subtraction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/14_substring.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/15_censored_words.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/Lab/16_count_string_occurrences_1 ​.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/More_Exercises/01. JS-Front-End-JS-Syntax-Fundamentals-More-Exercises.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/More_Exercises/01_validity_checker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/More_Exercises/02_words_uppercase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/More_Exercises/03_calculator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/More_Exercises/04_gladiator_expenses.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/More_Exercises/05_spice_must_flow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/More_Exercises/06_login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/More_Exercises/07_bitcoin_mining.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JS Front-End/01. JS Syntax Fundamentals/More_Exercises/08_the_pyramid_of_king_djoser_1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/01. Data-Definition-And-Datatypes-Exercises.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/01.create_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/02.alter_minions_table.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/03.insert_records_in_both_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/04.truncate_table_minions.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/05.drop_all_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/06.create_table_people.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/07.create_table_users.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/08.change_primary_key.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/09.set_default_value_of_a_field.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/10.set_unique_field.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/11.movies_database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/12.car_rental_database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/13.basic_insert.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/14.basic_select_all_fields.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/15.Basic_select_all_fields_and_order_them.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/16.basic_select_some_fields.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Exercise/17.increase_employees_salary.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Lab/01. Data-Definition-And-Datatypes-Lab.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Lab/01.create_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Lab/02.insert_data_in_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Lab/03.alter_table.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Lab/04.adding_constraints.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/01.Data Definition and Datatypes/Lab/05.modifying_columns.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/01.find_all_information_about_departments.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/02.find_all_department_names.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/03.find_salary_of_each_employee.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/04.find_full_ame_of_each_employee.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/05.find_email_address_of_each_employee.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/06.find_all_different_employee’s_salaries.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/07.find_all_information _about_employees.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/08.find_names_of_all_employees_by_Salary_in_range.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/09.find_names_of_all_employees.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/10.find_all_employees_without_manager.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/11.find_all_employees_with_salary_more_than.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/12.find_5_best_paid_employees.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/13.find_all_employees_except_marketing.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/14.sort _employees_table.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/15.create_view_employees_with_salaries.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/16.create_view_employees_with_job_titles.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/17.distinct_job_titles.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/18.find_first_10_tarted_projects.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/19._last_7_hired_employees.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/20.increase_salaries.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/21.all _mountain_peaks.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/22.biggest_countries_by_population.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/23.countries_and_currency_euro_not_euro.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/24.all_diablo_characters.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/MySQL-Basic-CRUD-Exercises.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/resources/diablo_database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/resources/geography_database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Exercise/resources/soft_uni_database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Lab/01.select_employee_information.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Lab/02.select_employees_with _filter.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Lab/03.update_employees_salary.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Lab/04.top_paid_Employee.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Lab/05.select_employees_by_multiple_filters.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Lab/06.delete_from_table.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Lab/MySQL-Basic-CRUD-Lab.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/02.Basic CRUD/Lab/hotel_db.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/01.find_names_of_all_employee_ by_first_name.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/02.find_names_of_all_employees_by_last_name.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/03.find_first_names_of_all_employess.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/04.find_all_employees_except_engineers.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/05.find_towns_with_name_length.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/06.find_towns_starting_with.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/07.find_towns_not_starting_with.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/08._create_view_employees_hired_after.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/09.length_of_last_name.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/10.countries_holding_a.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/11.mix_of_peak_and_river_names.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/12.games_from_2011_and_2012_year.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/13.user_email_providers.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/14.get_sers_with_ip_address_like_pattern.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/15.show _all_games_with_duration.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/16.orders_table.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/MySQL-Built-in-Functions-Exercises.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/resources/Orders-Database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/resources/diablo_database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/resources/geography_database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Exercise/resources/soft_uni_database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Lab/01.find_book_titles.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Lab/02.replace_titles.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Lab/03.sum_cost_of_all_books.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Lab/04.days_lived.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Lab/05.harry_potter_books.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Lab/MySQL-Built-in-Functions-Lab.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/03.Built-in Functions/Lab/booklibrary.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/04.Data Aggregation/Exercise/01.records_count.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/04.Data Aggregation/Exercise/02.longest_magic_wand.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/04.Data Aggregation/Exercise/04. MySQL-Data-Agregation-Exercises.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/04.Data Aggregation/Exercise/resources/gringotts-database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/04.Data Aggregation/Exercise/resources/soft_uni.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2cYj0wCLci10WZst77Dki0w6TMt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.templates_advanced.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SoftUni\Django\django_basics\projects\templates_advanced\templates_advanced" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="templates_advanced" type="Python.DjangoServer" factoryName="Django server">
+      <module name="templates_advanced" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="templates_advanced.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce74b3b3-5a7e-4ae1-ac1e-6e1e46f64745" name="Changes" comment="" />
+      <created>1708295186443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708295186443</updated>
+      <workItem from="1708295200755" duration="2151000" />
+      <workItem from="1708342306664" duration="1887000" />
+      <workItem from="1708554487038" duration="257000" />
+      <workItem from="1708813297584" duration="17000" />
+      <workItem from="1708880958804" duration="2935000" />
+      <workItem from="1708884655920" duration="1183000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
