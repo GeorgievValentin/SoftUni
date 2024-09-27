@@ -7,7 +7,7 @@ class Pet(models.Model):
         max_length = 30,
     )
 
-    personal_photo = models.URLField()
+    personal_pet_photo = models.URLField()
 
     date_of_birth = models.DateField(
         blank = True,
@@ -15,10 +15,10 @@ class Pet(models.Model):
     )
 
     slug = models.SlugField(
-        editable = False,
         unique = True,
         null = True,
         blank = True,
+        editable = False,
     )
 
     def save(self, *args, **kwargs):
