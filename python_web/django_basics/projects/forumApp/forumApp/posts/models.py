@@ -1,6 +1,7 @@
 from django.db import models
 
 from forumApp.posts.choices import LanguageChoice
+from forumApp.posts.validators import BadLanguageValidator
 
 
 class PostModel(models.Model):
@@ -12,7 +13,11 @@ class PostModel(models.Model):
         max_length = TITLE_MAX_LENGTH,
     )
 
-    content = models.TextField()
+    content = models.TextField(
+        validators = (
+            BadLanguageValidator(),
+        )
+    )
 
     author = models.CharField(
         max_length = AUTHOR_MAX_LENGTH,
