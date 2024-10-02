@@ -13,7 +13,8 @@ class PostAddForm(PostBaseForm):
 
 
 class PostEditForm(PostBaseForm):
-    pass
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
 
 
 class PostDeleteForm(PostBaseForm):

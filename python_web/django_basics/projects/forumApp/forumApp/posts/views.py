@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from forumApp.posts.forms import PostBaseForm, PostAddForm, PostDeleteForm, SearchForm
+from forumApp.posts.forms import PostAddForm, PostDeleteForm, SearchForm, PostEditForm
 from forumApp.posts.models import PostModel
 
 
@@ -9,11 +9,6 @@ def index(request):
     }
 
     return render(request, "base.html", context)
-    # context = {
-    #     "current_time": datetime.now(),
-    # }
-    #
-    # return render(request, "base.html", context)
 
 
 def dashboard(request):
@@ -58,8 +53,22 @@ def details_post(request, pk: int):
 
 
 def edit_post(request, pk: int):
-    pass
+    post = PostModel.objects.get(pk = pk)
 
+    if request.method == "POST":
+        form = PostEditForm(request.POST, instance = post)
+        if form.is_valid():
+            form.save()
+            return redirect("dashboard")
+    else:
+        form = PostEditForm(instance = post)
+
+    context = {
+        "form": form,
+        "post": post,
+    }
+
+    return render(request, "posts/edit-post.html", context)
 
 
 def delete_post(request, pk: int):
@@ -75,4 +84,4 @@ def delete_post(request, pk: int):
         "post": post,
     }
 
-    return render(request, "posts/delete-template.html", context)
+    return render(request, "posts/delete-post.html", context)
