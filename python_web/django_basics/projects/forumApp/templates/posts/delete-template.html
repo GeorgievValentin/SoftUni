@@ -14,11 +14,11 @@
 </head>
 <body>
     {% include "nav.html" %}
-    <form action="{% url 'add-post' %}" method="post">
+    <form action="{% url 'delete-post' post.pk %}" method="post">
         {{ form }}
         {% csrf_token %}
-        <button class="button-9">Add post</button>
-
+        <button class="button-9">Delete post</button>
+        
     </form>
 </body>
 <script src="https://unpkg.com/akar-icons-fonts"></script>
