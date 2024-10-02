@@ -1,39 +1,39 @@
-from datetime import datetime
-
-from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from forumApp.posts.forms import PostBaseForm
+from forumApp.posts.models import PostModel
 
 
 def index(request):
     context = {
-        "current_time": datetime.now(),
+        "form": "",
     }
 
     return render(request, "base.html", context)
+    # context = {
+    #     "current_time": datetime.now(),
+    # }
+    #
+    # return render(request, "base.html", context)
 
 
 def dashboard(request):
     context = {
-        "posts": [
-            {
-                "title": "How to become a junior developer?",
-                "author": "",
-                "content": "I am still working on it, when I become, will tell **you**!",
-                "date": datetime.now(),
-            },
-            {
-                "title": "How to become a senior developer?",
-                "author": "Valentin Georgiev",
-                "content": "",
-                "date": datetime.now(),
-            },
-            {
-                "title": "How to become a master developer?",
-                "author": "Valentin Georgiev",
-                "content": "### I am still working on it, when I become, will tell you!",
-                "date": datetime.now(),
-            },
-        ]
+        "posts": PostModel.objects.all(),
     }
 
     return render(request, "posts/dashboard.html", context)
+
+
+def add_post(request):
+    form = PostBaseForm(request.POST or None)
+
+    if request.method == "POST" and form.is_valid():
+        form.save()
+
+        return redirect("dashboard")
+
+    context = {
+        "form": form,
+    }
+
+    return render(request, "posts/add-post.html", context)
