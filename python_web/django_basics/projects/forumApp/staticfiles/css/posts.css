@@ -13,10 +13,6 @@ body {
     padding: 20px;
 }
 
-.main-header {
-    color: #405cf5;
-}
-
 h1 {
     text-align: center;
     color: #333;
@@ -60,10 +56,12 @@ h1 {
 .post h2 {
     margin: 0;
     color: #555;
+    text-align: left;
 }
 
 .post p {
     color: #666;
+    text-align: left;
 }
 
 .post-meta {

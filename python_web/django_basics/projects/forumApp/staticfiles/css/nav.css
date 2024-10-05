@@ -3,6 +3,7 @@
 }
 
 ul.menu {
+  z-index: 1000;
   position: fixed;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
