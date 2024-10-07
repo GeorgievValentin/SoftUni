@@ -7,14 +7,22 @@ class PostBaseForm(forms.ModelForm):
         model = PostModel
         fields = "__all__"
 
+        error_messages = {
+            "title": {
+                "max_length": f"The title is too long! Keep it no longer than {PostModel.TITLE_MAX_LENGTH}!"
+            },
+            "author": {
+                "max_length": f"The author's name is too long! Keep it no longer than {PostModel.AUTHOR_MAX_LENGTH}"
+            },
+        }
+
 
 class PostAddForm(PostBaseForm):
     pass
 
 
 class PostEditForm(PostBaseForm):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    pass
 
 
 class PostDeleteForm(PostBaseForm):
