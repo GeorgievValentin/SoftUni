@@ -23,7 +23,7 @@
 </head>
 <body>
 <div class="container-fluid">
-{% include "common/nav.html" %}
+
     <div class="row">
         <div class="col-md-2 p-3">
             {#        <p>Last refresh: {% current_time %}</p>#}
@@ -31,7 +31,8 @@
             <p>Date: <span id="live-date"></span></p>
         </div>
         <div class="col-md-8 py-4">
-{#            <div class="text-center">#}
+{#            <div class="text-center"> #}
+                {% include "common/nav.html" %}
                 {% block content %}
                 {% endblock %}
 {#            </div>#}
