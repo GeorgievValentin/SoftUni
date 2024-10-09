@@ -6,7 +6,7 @@
 
     {% block content %}
         <h1 class="main-header">Add Post</h1>
-        <form action="{% url 'add-post' %}" method="post">
+        <form action="{% url 'add-post' %}" method="post" enctype="multipart/form-data">
         {{ form }}
         {% csrf_token %}
         <button class="button-9">ADD</button>

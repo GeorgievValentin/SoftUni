@@ -32,6 +32,12 @@ class PostModel(models.Model):
         default = LanguageChoice.OTHER,
     )
 
+    image = models.ImageField(
+        upload_to = "post_images/",
+        blank = True,
+        null = True,
+    )
+
 
 class CommentModel(models.Model):
     AUTHOR_MAX_LENGTH = 50

@@ -1,11 +1,17 @@
+from django.forms import modelform_factory
 from django.shortcuts import render, redirect
 from forumApp.posts.forms import PostAddForm, PostDeleteForm, SearchForm, PostEditForm, PostCommentForm
 from forumApp.posts.models import PostModel, CommentModel
 
 
 def index(request):
+    post_form = modelform_factory(
+        PostModel,
+        fields = "__all__"
+    )
+
     context = {
-        "form": "",
+        "form": post_form,
     }
 
     return render(request, "common/index.html", context)
@@ -28,7 +34,7 @@ def dashboard(request):
 
 
 def add_post(request):
-    form = PostAddForm(request.POST or None)
+    form = PostAddForm(request.POST or None, request.FILES or None)
 
     if request.method == "POST" and form.is_valid():
         form.save()
