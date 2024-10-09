@@ -31,3 +31,24 @@ class PostModel(models.Model):
         choices = LanguageChoice.choices,
         default = LanguageChoice.OTHER,
     )
+
+
+class CommentModel(models.Model):
+    AUTHOR_MAX_LENGTH = 50
+
+    to_post = models.ForeignKey(
+        PostModel,
+        on_delete = models.CASCADE,
+        related_name = "comments",
+    )
+
+    author = models.CharField(
+        max_length = AUTHOR_MAX_LENGTH,
+    )
+
+    content = models.TextField()
+
+    created_at = models.DateTimeField(
+        auto_now_add = True,
+    )
+

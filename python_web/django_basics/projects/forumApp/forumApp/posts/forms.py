@@ -2,7 +2,7 @@ from django import forms
 from django.core.exceptions import ValidationError
 
 from forumApp.posts.mixisns import DisableFieldsMixin
-from forumApp.posts.models import PostModel
+from forumApp.posts.models import PostModel, CommentModel
 
 
 class PostBaseForm(forms.ModelForm):
@@ -59,7 +59,6 @@ class PostBaseForm(forms.ModelForm):
     #     return title
 
 
-
 class PostAddForm(PostBaseForm):
     pass
 
@@ -83,5 +82,40 @@ class SearchForm(forms.Form):
             }
         )
     )
+
+
+class PostCommentForm(forms.ModelForm):
+    class Meta:
+        model = CommentModel
+        fields = ("author", "content")
+
+        labels = {
+            "author": "",
+            "content": "",
+        }
+
+        error_messages = {
+            "author": {
+                "required": "Write th author's name!",
+                "max_length": f"Authors name can't be longer than {CommentModel.AUTHOR_MAX_LENGTH}"
+            },
+            "content": {
+                "required": "Write your comment. It can't be empty!"
+            },
+
+        }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self.fields["author"].widget.attrs.update({
+            "class": "form-control",
+            "placeholder": "Your name",
+        })
+
+        self.fields["content"].widget.attrs.update({
+            "class": "form-control",
+            "placeholder": "Your comment"
+        })
 
 

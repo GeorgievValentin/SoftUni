@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from forumApp.posts.forms import PostAddForm, PostDeleteForm, SearchForm, PostEditForm
-from forumApp.posts.models import PostModel
+from forumApp.posts.forms import PostAddForm, PostDeleteForm, SearchForm, PostEditForm, PostCommentForm
+from forumApp.posts.models import PostModel, CommentModel
 
 
 def index(request):
@@ -44,9 +44,20 @@ def add_post(request):
 
 def details_post(request, pk: int):
     post = PostModel.objects.get(pk = pk)
+    comment_form = PostCommentForm(request.POST or None)
+    comments = CommentModel.objects.filter(to_post = post)
+
+    if request.method == "POST" and comment_form.is_valid():
+        comment_form = comment_form.save(commit = False)
+        comment_form.to_post = post
+        comment_form.save()
+
+        return redirect("details-post", pk = post.pk)
 
     context = {
         "post": post,
+        "comment_form": comment_form,
+        "comments": comments,
     }
 
     return render(request, "posts/details-post.html", context)
