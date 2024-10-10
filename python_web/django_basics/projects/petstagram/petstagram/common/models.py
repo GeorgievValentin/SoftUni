@@ -4,8 +4,10 @@ from petstagram.photos.models import Photo
 
 
 class Comment(models.Model):
+    COMMENT_MAX_LENGTH = 300
+
     comment_text = models.TextField(
-        max_length = 300,
+        max_length = COMMENT_MAX_LENGTH,
     )
 
     date_time_of_publication = models.DateTimeField(
