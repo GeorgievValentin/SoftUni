@@ -8,7 +8,7 @@ class Comment(models.Model):
         max_length = 300,
     )
 
-    date_ttime_of_publication = models.DateTimeField(
+    date_time_of_publication = models.DateTimeField(
         auto_now_add = True,
     )
 
