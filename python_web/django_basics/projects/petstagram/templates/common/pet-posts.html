@@ -26,7 +26,7 @@
                 <br>
                 <!-- if the photo has location -->
                 {% if photo.location %}
-                    <span>{{ photo.location}}</span>
+                    <span>{{ photo.location }}</span>
                 {% endif %}
             </h3>
         </div>
@@ -45,17 +45,22 @@
             <div class="left">
                 <!-- Start Like Button -->
                 <span class="heart">
-                                <a href="#">
-                                    <!-- if user has liked the photo -->
-                                    <i class="fa-solid fa-heart" style="color: #ed4040;"></i>
-                                    <!-- else -->
-                                    <i class="fa-regular fa-heart"></i>
-                                </a>
-                            </span>
+                    <a href="{% url 'like' photo.pk %}">
+                        <!-- if user has liked the photo -->
+                        {% if photo.like_set.all %}
+                            <i class="fa-solid fa-heart" style="color: #ed4040;"></i>
+
+                      <!-- else -->
+                        {% else %}
+                            <i class="fa-regular fa-heart"></i>
+                        {% endif %}                   
+                    </a>
+                        
+                </span>
                 <!-- End Like Button -->
 
                 <!-- Start Share Button -->
-                <a href="#">
+                <a href="{% url 'share' photo.id  %}">
                     <i class="fa-solid fa-share"></i>
                 </a>
                 <!-- End Share Button -->
@@ -65,23 +70,18 @@
         <!-- End Like and Share Buttons -->
 
         <!-- Number of Likes per Photo -->
-        <p class="likes">203 likes</p>
-
+        <p class="likes">{{ photo.like_set.count }} likes</p>
 
         <!-- Start Tagged Pets -->
         <!-- Link to First Tagged Pet Details Page-->
-        <a href="#">
-            <p class="message">
-                <b>Sasho</b>
-            </p>
-        </a>
-
-        <!-- Link to Second Tagged Pet Details Page-->
-        <a href="#">
-            <p class="message">
-                <b>Some other fish</b>
-            </p>
-        </a>
+        {% for pet in photo.tagged_pets.all %}
+            <!-- Link to First Tagged Pet Details Page-->
+            <a href="{% url 'pet_details' "username" pet.slug %}">
+                <p class="message">
+                    <b>{{ pet.name }}</b>
+                </p>
+            </a>
+        {% endfor %}
         <!-- End Tagged Pets -->
 
         <!-- Link to Photo Details Page -->

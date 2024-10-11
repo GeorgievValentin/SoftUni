@@ -14,4 +14,5 @@ def pet_details(request, username: str, pet_slug: str):
 
 
 def pet_edit(request, username: str, pet_slug: str):
+
     return render(request, "pets/pet-edit-page.html")
