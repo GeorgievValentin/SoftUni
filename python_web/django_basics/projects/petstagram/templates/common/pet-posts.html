@@ -93,7 +93,7 @@
 
         {% if photo_page %}
             <!-- Photo description -->
-            <p class="pet-details">This is my pet</p>
+            <p class="pet-details">{{ photo.description }}</p>
         {% else %}
             <!-- Link to Photo Details Page -->
             <a href="{% url 'photo_details' photo.pk %}">
@@ -123,7 +123,7 @@
                                     <!-- User First and/or Last Name or username-->
                                     <a href="">Steven Ivanov</a>
                                     <!-- User Comment -->
-                                    {{ comment.text }}
+                                    {{ comment.comment_text }}
                                 </p>
                             </div>
                             <span>{{ comment.date_time_of_publication }}</span>
