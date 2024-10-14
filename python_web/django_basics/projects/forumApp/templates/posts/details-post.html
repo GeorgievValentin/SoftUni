@@ -46,9 +46,16 @@
                 <div class="post-meta">
                     <span>Posted by {{ post.author|default:"anonymous" }} on {{ post.published_date|date:"d-M-Y" }}</span>
                 </div>
+                 <div class="">    {#  Add some style !!!  #}
+                    <form action="{% url 'details-post' post.pk %}" method="post">
+                        {% csrf_token %}
+                        {{ comment_form }}
+                        <button class="btn btn-primary">Submit Answer</button>
+                    </form>
+                </div>
                 <div class="comments">
                     <h5>Answers:</h5>
-                    {% for comment in comments %}
+                    {% for comment in post.comments.all %}
                         <div class="comment">
                             <p> {{ comment.content }}</p>
                             <div class="post-meta">
@@ -60,13 +67,6 @@
                     {% empty %}
                         <p>No answers yet. Be the first to answer!</p>
                     {% endfor %}
-                </div>
-                <div class="">
-                    <form action="{% url 'details-post' post.pk %}" method="post">
-                        {% csrf_token %}
-                        {{ comment_form }}
-                        <button class="btn btn-primary">Submit Answer</button>
-                    </form>
                 </div>
             </div>
         </div>
