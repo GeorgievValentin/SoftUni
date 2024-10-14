@@ -1,4 +1,6 @@
 from django import forms
+
+from petstagram.mixins import DisableFieldsMixin
 from petstagram.pets.models import Pet
 
 
@@ -32,7 +34,7 @@ class PetAddForm(PetBaseForm):
     pass
 
 
-class PetDeleteForm(PetBaseForm):
+class PetDeleteForm(PetBaseForm, DisableFieldsMixin):
     disabled_fields = ("__all__",)
     pass
 

@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
             model_name="photo",
             name="photo",
             field=models.ImageField(
-                upload_to="media_files",
+                upload_to="mediafiles",
                 validators=[petstagram.photos.validators.FileSizeValidator(5)],
             ),
         ),

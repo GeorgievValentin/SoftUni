@@ -1,18 +1,19 @@
 {% extends "common/base.html" %}
 
+
 {% block content %}
-    <!-- Starts Edit Photo Section -->
+     <!-- Starts Delete Photo Section -->
     <div class="edit-delete edit-photo">
-        <h2>Edit photo</h2>
+        <h2>Delete photo</h2>
 
         <!-- Starts Edit Photo Form -->
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}
-            <button class="edit-btn" type="submit">Edit Photo</button>
+            <button class="edit-btn" type="submit">Delete Photo</button>
         </form>
-        <!-- End Edit Photo Form -->
+        <!-- End Delete Photo Form -->
 
     </div>
-    <!-- End Edit Photo Section -->
+    <!-- End Delete Photo Section -->
 {% endblock %}
