@@ -3,8 +3,8 @@
 {% block content %}
     <h1 class="main-header">Delete Post</h1>    
     <form action="{% url 'delete-post' post.pk %}" method="post">
-        {{ form }}
         {% csrf_token %}
+        {{ form }}
         <button class="button-9">DELETE</button>
     </form>
 {% endblock %}
