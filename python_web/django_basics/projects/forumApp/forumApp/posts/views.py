@@ -4,9 +4,9 @@ from django.forms import modelform_factory
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.utils.decorators import classonlymethod
-from django.views.generic import TemplateView, ListView, FormView, CreateView, UpdateView, DeleteView
+from django.views.generic import TemplateView, ListView, FormView, CreateView, UpdateView, DeleteView, DetailView
 
-from forumApp.posts.forms import PostAddForm, PostDeleteForm, SearchForm, PostEditForm, PostCommentForm
+from forumApp.posts.forms import PostAddForm, PostDeleteForm, SearchForm, PostEditForm, PostCommentForm, CommentFormSet
 from forumApp.posts.models import PostModel, CommentModel
 
 
@@ -112,25 +112,55 @@ class PostAddView(CreateView):
 #     return render(request, "posts/add-post.html", context)
 
 
-def details_post(request, pk: int):
-    post = PostModel.objects.get(pk = pk)
-    comment_form = PostCommentForm(request.POST or None)
-    comments = CommentModel.objects.filter(to_post = post)
+class PostDetailsView(DetailView):
+    model = PostModel
+    context_object_name = "post"
+    template_name = "posts/details-post.html"
 
-    if request.method == "POST" and comment_form.is_valid():
-        comment_form = comment_form.save(commit = False)
-        comment_form.to_post = post
-        comment_form.save()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["formset"] = CommentFormSet()
+        context["comments"] = self.object.comments.all()
+        return context
 
-        return redirect("details-post", pk = post.pk)
+    def post(self, request, *args, **kwargs):
+        post = self.get_object()
+        formset = CommentFormSet(request.POST)
 
-    context = {
-        "post": post,
-        "comment_form": comment_form,
-        "comments": comments,
-    }
+        if formset.is_valid():
+            for form in formset:
+                if form.cleaned_data:
+                    comment = form.save(commit = False)
+                    comment.to_post = post
+                    comment.save()
 
-    return render(request, "posts/details-post.html", context)
+            return redirect("details-post", pk = post.id)
+
+        context = self.get_context_data()
+        context["formset"] = formset
+
+        return self.render_to_response(context)
+
+
+# def details_post(request, pk: int):
+#     post = PostModel.objects.get(pk = pk)
+#     comment_form = PostCommentForm(request.POST or None)
+#     comments = CommentModel.objects.filter(to_post = post)
+#
+#     if request.method == "POST" and comment_form.is_valid():
+#         comment_form = comment_form.save(commit = False)
+#         comment_form.to_post = post
+#         comment_form.save()
+#
+#         return redirect("details-post", pk = post.pk)
+#
+#     context = {
+#         "post": post,
+#         "comment_form": comment_form,
+#         "comments": comments,
+#     }
+#
+#     return render(request, "posts/details-post.html", context)
 
 
 class PostEditView(UpdateView):

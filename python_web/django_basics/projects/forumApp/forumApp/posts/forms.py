@@ -1,5 +1,6 @@
 from django import forms
 from django.core.exceptions import ValidationError
+from django.forms import formset_factory
 
 from forumApp.posts.mixisns import DisableFieldsMixin
 from forumApp.posts.models import PostModel, CommentModel
@@ -118,4 +119,6 @@ class PostCommentForm(forms.ModelForm):
             "placeholder": "Your comment"
         })
 
+
+CommentFormSet = formset_factory(PostCommentForm, extra = 1)
 

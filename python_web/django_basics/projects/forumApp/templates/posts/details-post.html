@@ -49,7 +49,7 @@
             <div class=""> {# Add some style !!! #}
                 <form action="{% url 'details-post' post.pk %}" method="post">
                     {% csrf_token %}
-                    {{ comment_form }}
+                    {{ formset }}
                     <button class="btn btn-primary">Submit Answer</button>
                 </form>
             </div>
@@ -86,11 +86,10 @@
                             <p>No answers yet. Be the first to answer!</p>
                     </div>
                     {% endfor %}
-                </div>
-            </div>
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </div>
 </div>
 </div>
 {% endblock %}
- 
