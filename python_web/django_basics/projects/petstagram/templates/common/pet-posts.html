@@ -1,12 +1,11 @@
 {% load static %}
 
 <div class="card">
-
     <!-- Start User Details and Image Location -->
     <div class="top">
         <div class="userDetails">
             <!-- Link to User Profile Page -->
-            <a href="#">
+            <a href="">
                 <div class="profilepic">
                     <div class="profile_img">
                         <div class="image">
@@ -28,6 +27,7 @@
                 {% if photo.location %}
                     <span>{{ photo.location }}</span>
                 {% endif %}
+            
                 {% if photo_page %}
                     <!-- IF the viewer is the creator of the photo -->
                     <div class="edit-delete-btns">
@@ -40,8 +40,9 @@
 
                         <!-- Link to Delete Pet Photo Page -->
                         <a href="{% url 'photo_delete' photo.pk %}">
-                            <img class="bin-img" src="{% static '/images/icon-remove-22.jpg' %}">
-                        </a>
+                        <img class="bin-img" src="{% static '/images/icon-remove-22.jpg' %}"
+                             alt="bin button">
+                    </a>
                     </div>
                     <!-- End IF the viewer is the creator of the photo -->
                 {% endif %}
@@ -67,7 +68,7 @@
                             <i class="fa-solid fa-heart" style="color: #ed4040;"></i>
                         {% else %}
                             <i class="fa-regular fa-heart"></i>
-                        {% endif %}                   
+                        {% endif %}
                     </a>
                 </span>
                 <!-- End Like Button -->
@@ -79,7 +80,9 @@
         </div>
         <!-- End Like and Share Buttons -->
         <!-- Number of Likes per Photo -->
-        <p class="likes">{{ photo.like_set.count }} likes</p>
+        <a href="#">
+            <p class="likes">{{ photo.like_set.count }} likes</p>
+        </a>
 
         <!-- Start Tagged Pets -->
         {% for pet in photo.tagged_pets.all %}
@@ -132,7 +135,7 @@
                 </div>
                 <!-- End Comments Section -->
             {% endfor %}
-            </div>
+            
 
         {% endif %}
 
@@ -144,9 +147,9 @@
             <button type="submit">Post</button>
         </form>
         <!-- End Add Comments Form -->
-
     </div>
+</div>
     <!-- End Add Comments Section -->
 
 </div>
-</div>
+
